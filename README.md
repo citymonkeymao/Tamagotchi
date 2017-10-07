@@ -1,13 +1,13 @@
 # Tamagotchi
 Simple python implementation of Tamagotchi
 
-#Install
+# Install
 ```pip install -r requirements.txt```
 
-#Play
+# Play
 Change directory to game, run ```python game.py```, you will enter an IPython interactive interface. The game starts here.
 
-##Basic pet
+## Basic pet
 The basic pet has only one metric, hunger. By feeding it, the hunger metric will increase. This pet will not die even if the hunger became negative.
 
 * create a basic pet: in IPython interface, enter:
