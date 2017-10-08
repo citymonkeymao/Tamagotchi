@@ -29,7 +29,7 @@ This version is a minimal workable product.
 Just like basic pet, mortal creature has only one metric and one action. However, if the hunger metric goes blow zero, this animal is going to die. Trying to feed or update a dead pet will incur PetDeadException.
 
 * create and start play,
-<br>
+
  ```mortal = MortalCreature()```
  <br>
  ```start_play(mortal)```
@@ -61,4 +61,6 @@ A koala typically sleeps 18 hours a day, during the sleep hours, it does not eat
  ```k.feed()```
 
  the hunger will not increase by this time while feeding in awake state could increase the hunger bar.
+
+
 
