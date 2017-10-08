@@ -61,9 +61,17 @@ A koala typically sleeps 18 hours a day, during the sleep hours, it does not eat
  ```k.feed()```
 
  the hunger will not increase if you feed it at this time, but feeding in awake state will.
+ 
+* When you put a koala to bed, it will sleep despite of the time, this operation is only allowed when the pet is awake.
+
+  ```k.to_bed()```
+  
+* to make it awake again, manually take it out of bed is necessary. off_bed can be called when the animal is sleeping.
+
+ ```k.off_bed()```
 
 ## multi-metric pet
-Simply add two metrics: happiness and health. Happiness will increase when you play with it, health will increase when doing cleaning. If health goes 0, the pet die.
+Simply add two metrics: happiness and health. Happiness will increase if you play with it, health will increase when you clean it. If health goes 0, the pet dies.
 
 * create and start play:
 
@@ -77,3 +85,33 @@ Simply add two metrics: happiness and health. Happiness will increase when you p
  <br>
  ```m.play()```
  
+ ## Aging pet
+ Another factor of the Tamagotchi is that an animal has its own life cycle. An aging pet has two stages in its life, before its 20s, we call it young. 20 to 40 is called old. Finally, this creature will die on 40. The age increases every 2 seconds.
+
+* create and play
+
+```a = AgingPet()```
+<br>
+```start_play(a)```
+
+* feed, clean, play, to bed and off bed
+
+```a.feed()```
+<br>
+```a.clean()```
+<br>
+```a.play()```
+<br>
+```a.to_bed()```
+<br>
+```a.off_bed()```
+<br>
+
+
+# Known issues
+* Not able to invoke start_play twice, a possible reason is that matplotlib is not thread safe. A walk through is to restart game each time. One way to solve this problem is use another UI library.
+* The figure window pauses for few seconds after input a command. The reason is unknown.
+
+
+
+
