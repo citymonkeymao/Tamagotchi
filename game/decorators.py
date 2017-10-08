@@ -9,3 +9,10 @@ def sync(func):
         threadLock.release()
         return ret
     return func_wrapper
+def death_check(func):
+    def wrapper(*args, **kw):
+        if args[0].dead:
+            raise PetDeadException('playing with a dead animal', 1)
+        else:
+            func(*args,**kw)
+    return wrapper
