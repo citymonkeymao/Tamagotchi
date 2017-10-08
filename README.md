@@ -67,11 +67,13 @@ Simply add two metrics: happiness and health. Happiness will increase when you p
 
 * create and start play:
 
- ```m = MultiMetricPet()
- start_play(b)```
+ ```m = MultiMetricPet()```
+ <br>
+ ```start_play(b)```
  
 * clean and play:
 
- ```m.clean()
- m.play()```
+ ```m.clean()```
+ <br>
+ ```m.play()```
  
