@@ -31,11 +31,11 @@ Just like basic pet, mortal creature has only one metric and one action. However
 * create and start play,
  
  ```python game.py```
-
+<br>
  ```mortal = MortalCreature()```
- 
+ <br>
  ```start_play(mortal)```
- 
+ <br>
  If no more command following, the pet will die when it's hunger goes to zero. 
 * By feeding it, the creature could stay alive.
 
@@ -63,7 +63,5 @@ A koala typically sleeps 18 hours a day, during the sleep hours, it does not eat
  ```k.feed()```
 
  the hunger will not increase by this time while feeding in awake state could increase the hunger bar.
-
-
 
 
