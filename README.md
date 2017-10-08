@@ -60,7 +60,18 @@ A koala typically sleeps 18 hours a day, during the sleep hours, it does not eat
  
  ```k.feed()```
 
- the hunger will not increase by this time while feeding in awake state could increase the hunger bar.
+ the hunger will not increase if you feed it at this time, but feeding in awake state will.
 
+## multi-metric pet
+Simply add two metrics: happiness and health. Happiness will increase when you play with it, health will increase when doing cleaning. If health goes 0, the pet die.
 
+* create and start play:
 
+ ```m = MultiMetricPet()
+ start_play(b)```
+ 
+* clean and play:
+
+ ```m.clean()
+ m.play()```
+ 
