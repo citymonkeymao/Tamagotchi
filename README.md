@@ -58,7 +58,7 @@ A koala typically sleeps 18 hours a day, during the sleep hours, it does not eat
   
 * try to feed koala in sleeping time:
 
- when the daytime bar is larger than 6 and the legend shows it's sleeping.....
+  when the daytime bar is larger than 6 and the legend shows it's sleeping.....
  
    ```k.feed()```
 
@@ -78,14 +78,14 @@ This new version simply added two metrics to koala: happiness and health. Happin
 * create and start play:
 
    ```m = MultiMetricPet()```
- <br>
+
    ```start_play(b)```
  
 * clean and play:
 
    ```m.clean()```
- <br>
-   ```m.play()```
+
+  ```m.play()```
  
 ## Aging pet
 Another factor of the Tamagotchi is that an animal has its own life cycle. An aging pet has two stages in its life, before its 20s, we call it young. 20 to 40s is called old. Finally, this creature will die on 40. The age metric increases every 2 seconds.
@@ -93,29 +93,17 @@ Another factor of the Tamagotchi is that an animal has its own life cycle. An ag
 * create and play
 
    ```a = AgingPet()```
-<br>
+
    ```start_play(a)```
 
 * feed, clean, play, to bed and off bed
 
    ```a.feed()```
-<br>
-   ```a.clean()```
-<br>
-   ```a.play()```
-<br>
-   ```a.to_bed()```
-<br>
-   ```a.off_bed()```
-<br>
 
+  ```a.clean()```
 
-# Known issues
-* Not able to invoke start_play twice, a possible reason is that matplotlib is not thread safe. A walk through is to restart game each time. One way to solve this problem is use another UI library.
-* The figure window pauses for few seconds after input a command. The reason is unknown.
+  ```a.play()```
 
+  ```a.to_bed()```
 
-
-
-
-
+  ```a.off_bed()```
