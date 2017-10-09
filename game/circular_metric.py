@@ -1,9 +1,9 @@
 from metric import Metric
 
-class CircleMetric(Metric):
+class CircularMetric(Metric):
     def __init__(self, value = 0, update_period = 1, update_rate = 1, maximum = 24):
-        super(CircleMetric,self).__init__(value,update_period,update_rate)
+        super(CircularMetric, self).__init__(value, update_period, update_rate)
         self.maximum = maximum
     def update(self,pet):
-        super(CircleMetric,self).update()
+        super(CircularMetric, self).update(pet)
         self.value %= self.maximum

@@ -1,7 +1,8 @@
 import sys
 import time
 sys.path.append('../game')
-from mortal_creature import MortalCreature, PetDeadException
+from mortal_creature import MortalCreature
+from game_exceptions import PetDeadException
 b = MortalCreature()
 for i in range(5):
     time.sleep(1)

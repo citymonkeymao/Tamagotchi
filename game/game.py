@@ -1,4 +1,8 @@
 from pet import *
+from mortal_creature import MortalCreature
+from koala import Koala
+from multi_metric_pet import MultiMetricPet
+from aging_pet import AgingPet
 import thread
 import time
 from IPython import embed

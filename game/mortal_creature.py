@@ -4,15 +4,6 @@ import matplotlib.image as mpimg
 from death_metric import DeathMetric
 from decorators import death_check
 
-class PetDeadException(Exception):
-    def __init__(self, message, errors):
-        # Call the base class constructor with the parameters it needs
-        super(Exception, self).__init__(message)
-
-        # Now for your custom code...
-        self.errors = errors
-
-
 class MortalCreature(BasicPet):
     def __init__(self):
         self.dead = False
