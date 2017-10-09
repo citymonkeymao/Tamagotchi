@@ -33,18 +33,18 @@ Just like basic pet, mortal creature has only one metric and one action. However
 
 * create and start play,
 
- ```mortal = MortalCreature()```
+   ```mortal = MortalCreature()```
 
- ```start_play(mortal)```
+   ```start_play(mortal)```
 
  If no more command following, the pet will die when it's hunger goes to zero. 
 * By feeding it, the creature could stay alive.
 
- ```mortal.feed()```
+   ```mortal.feed()```
 
 * Feeding the dead could result in an exception
  wait for few seconds until the pet die.............
- ```mortal.feed()```
+   ```mortal.feed()```
 
 2 files were added at this stage, ```death_metric.py``` defines the behavior of a metric that can cause death. ```mortal_creature.py``` defines a pet that will raise exception when dead. The @death_check decorator is used to check if this pet is alive.
 
@@ -114,4 +114,5 @@ Another factor of the Tamagotchi is that an animal has its own life cycle. An ag
 # Known issues
 * Not able to invoke start_play twice, a possible reason is that matplotlib is not thread safe. A walk through is to restart game each time. One way to solve this problem is use another UI library.
 * The figure window pauses for few seconds after input a command. The reason is unknown.
+
 
