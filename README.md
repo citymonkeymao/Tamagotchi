@@ -4,6 +4,7 @@
 * ```pip install -r requirements.txt```
 # Play
 Change directory to game, run ```python game.py```, you will enter an IPython interactive interface.
+![screen shot](https://github.com/citymonkeymao/Tamagotchi/blob/master/docs/screenshot.png?raw=true)
 ## Basic pet
 The basic pet has only one metric, hunger. By feeding it, the hunger metric will increase. This pet will not die even if the hunger became negative.
 
@@ -113,5 +114,4 @@ Another factor of the Tamagotchi is that an animal has its own life cycle. An ag
 # Known issues
 * Not able to invoke start_play twice, a possible reason is that matplotlib is not thread safe. A walk through is to restart game each time. One way to solve this problem is use another UI library.
 * The figure window pauses for few seconds after input a command. The reason is unknown.
-
 
