@@ -33,9 +33,9 @@ Just like basic pet, mortal creature has only one metric and one action. However
 * create and start play,
 
  ```mortal = MortalCreature()```
- <br>
+
  ```start_play(mortal)```
- <br>
+
  If no more command following, the pet will die when it's hunger goes to zero. 
 * By feeding it, the creature could stay alive.
 
@@ -66,11 +66,11 @@ A koala typically sleeps 18 hours a day, during the sleep hours, it does not eat
  
 * When you put a koala to bed, it will sleep despite of the time, this operation is only allowed when the pet is awake.
 
-  ```k.to_bed()```
+   ```k.to_bed()```
   
 * to make it awake again, manually take it out of bed is necessary. off_bed can be called when the animal is sleeping.
-
- ```k.off_bed()```
+ 
+  ```k.off_bed()```
 
 ## multi-metric pet
 This new version simply added two metrics to koala: happiness and health. Happiness will increase if you play with it, health will increase when you clean it. If health goes 0, the pet dies.
@@ -107,3 +107,11 @@ Another factor of the Tamagotchi is that an animal has its own life cycle. An ag
   ```a.to_bed()```
 
   ```a.off_bed()```
+
+
+
+# Known issues
+* Not able to invoke start_play twice, a possible reason is that matplotlib is not thread safe. A walk through is to restart game each time. One way to solve this problem is use another UI library.
+* The figure window pauses for few seconds after input a command. The reason is unknown.
+
+
